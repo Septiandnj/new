@@ -53,3 +53,4 @@ Route::get('test4','PrakerinController@d');
 Route::get('test5','PrakerinController@e');
 
 Route::get('halaman/{id}','PrakerinController@param');
+Route::get('/{a}','PrakerinController@parameter');

@@ -69,4 +69,10 @@ class PrakerinController extends Controller
 	{
 		return view('welcome');
 	}
+
+	public function parameter($a)
+	{
+		return view('welcome2', compact('a'));
+	}
+
 }
