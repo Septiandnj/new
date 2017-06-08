@@ -37,3 +37,19 @@ route::get('/testmodel3', function(){
 	$c = App\pengaturan::all();
 	return $c;
 });
+
+//LATIHAN CONTROLLER
+
+Route::get('test','PrakerinController@percobaan');
+
+Route::get('test1','PrakerinController@a');
+
+Route::get('test2','PrakerinController@b');
+
+Route::get('test3','PrakerinController@c');
+
+Route::get('test4','PrakerinController@d');
+
+Route::get('test5','PrakerinController@e');
+
+Route::get('halaman/{id}','PrakerinController@param');
