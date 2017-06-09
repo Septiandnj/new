@@ -18,6 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+/*
 route::get('/testmodel', function(){
 	$q = App\Blog::all();
 	return $q;
@@ -53,4 +54,15 @@ Route::get('test4','PrakerinController@d');
 Route::get('test5','PrakerinController@e');
 
 Route::get('halaman/{id}','PrakerinController@param');
+
 Route::get('/{a}','PrakerinController@parameter');
+*/
+Route::get('test6','CobaController@test1');
+
+Route::get('test7/{id}','CobaController@test2');
+
+Route::get('test8','CobaController@index');
+
+Route::get('test9','CobaController@percobaan');
+
+Route::get('nama/{data}','CobaController@binatan');
