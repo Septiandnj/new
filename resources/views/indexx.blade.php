@@ -14,8 +14,14 @@
 	</tr>
 
 	@foreach ($a as $data)
-	{{ $data }}
-@endforeach
+		<tr>
+			<td>{{$data->id}}</td>
+			<td>{{$data->nama}}</td>
+			<td>{{$data->kelas}}</td>
+			<td>{{$data->jurusan}}</td>
+			<td>{{$data->jenis_kelamin}}</td>
+		</tr>
+	@endforeach
 </table>
 </body>
 </html>

@@ -56,7 +56,7 @@ Route::get('test5','PrakerinController@e');
 Route::get('halaman/{id}','PrakerinController@param');
 
 Route::get('/{a}','PrakerinController@parameter');
-*/
+
 Route::get('test6','CobaController@test1');
 
 Route::get('test7/{id}','CobaController@test2');
@@ -65,4 +65,12 @@ Route::get('test8','CobaController@index');
 
 Route::get('test9','CobaController@percobaan');
 
-Route::get('nama/{data}','CobaController@binatan');
+Route::get('nama/{data}', 'CobaController@binatan');
+
+Route::get('test10', 'CobaController@index');
+*/
+Route::get('test12', 'CobaController@aaa');
+
+Route::get('test12/{nama}', 'CobaController@test11');
+
+Route::resource('post', 'PostController');
